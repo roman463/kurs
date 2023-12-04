@@ -1,0 +1,421 @@
+.collection {
+    background: #F9F9F9;
+    padding: 78px 29px 101px;
+}
+
+.green {
+    color: #10C352;
+}
+
+.red {
+    color: #E23333;
+}
+
+.collection h2 {
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44.751px;
+    margin-bottom: 39px;
+}
+
+.collection .titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 13.5px;
+}
+
+.collection .titles .right-part p:not(.volume),
+.collection .row .right-part p:not(.volume),
+.collection .row .right-part .volume .new,
+.collection .row .left-part .name span:first-of-type {
+    display: none;
+}
+
+.collection .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #EBE9E9;
+    padding-bottom: 12.82px;
+    margin-top: 18.5px;
+}
+
+.collection .row .left-part {
+    display: flex;
+}
+
+.collection .row .left-part .image {
+    position: relative;
+    width: 46.239px;
+    height: 46.239px;
+}
+
+.collection .row .left-part .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 22.16px;
+}
+
+.collection .row .left-part .name h3 {
+    font-size: 15.413px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 7.7px;
+}
+
+.collection .row .left-part .name p {
+    color: #64748B;
+    font-size: 12.523px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.collection .row .left-part img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection .row .left-part .number {
+    position: absolute;
+    bottom: -1.5px;
+    right: -6px;
+    width: 21.193px;
+    height: 21.193px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 11.56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.096px;
+}
+
+.collection .row .right-part {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.collection .row .right-part .hidden {
+    font-size: 13.486px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 8px;
+    margin-right: 3px;
+}
+
+.collection .row .right-part p {
+    display: flex;
+    align-items: center;
+    font-size: 15.413px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    gap: 1.9px;
+    margin-right: 2px;
+}
+
+.collection .row .right-part p svg {
+    width: 17.339px;
+    height: 17.339px;
+}
+
+.collection .titles p {
+    color: #93989A;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    font-size: 14px;
+    letter-spacing: 0.14px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ACADB9;
+    text-decoration: none;
+    font-size: 12.289px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27.762px;
+    letter-spacing: -0.061px;
+    margin-top: 41px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.link:hover,
+.link:hover path {
+    transition: all .5s ease-in-out;
+    color: #414141;
+    stroke: #414141;
+}
+
+.link svg {
+    margin-left: 12px;
+    width: 10px;
+    height: 10px;
+}
+
+.link svg path {
+    transition: all .5s ease-in-out;
+}
+
+
+/* -------------------- BREAKPOINT 1024 ------------------------ */
+
+@media screen and (min-width: 1024px) {
+    .collection {
+        padding: 168.13px 68px 70.56px 69px;
+    }
+
+    .collection h2 {
+        font-size: 32.032px;
+        line-height: 31.826px;
+        margin-bottom: 64px;
+    }
+
+    .collection .titles {
+        padding-bottom: 4.5px;
+    }
+
+    .collection .titles p {
+        font-size: 15.646px;
+        letter-spacing: 0.156px;
+    }
+
+    .collection .titles .right-part {
+        display: flex;
+        gap: 66px;
+    }
+
+    .collection .titles .right-part p:not(.volume) {
+        display: flex;
+    }
+
+    .collection .row {
+        border-bottom: 1.202px solid #EBE9E9;
+        padding-bottom: 18px;
+        margin-top: 29px;
+    }
+
+    .collection .row .left-part .image {
+        width: 59.77px;
+        height: 59.77px;
+    }
+
+    .collection .row .left-part .name {
+        margin-left: 16.82px;
+    }
+
+    .collection .row .left-part .name h3 {
+        font-size: 19.923px;
+        margin-bottom: 1.25px;
+    }
+
+    .collection .row .left-part .name p {
+        font-size: 16.188px;
+    }
+
+    .collection .row .left-part .name span:first-of-type {
+        display: block;
+    }
+
+
+    .collection .row .left-part .number,
+    .collection .row .right-part .hidden,
+    .collection .row .right-part .volume .old,
+    .collection .row .left-part .name span.hidden {
+        display: none;
+    }
+
+    .collection .row .right-part {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 11px;
+    }
+
+    .collection .row .right-part p {
+        font-size: 16.822px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 0.168px;
+    }
+
+    .collection .row.blue .right-part {
+        margin-bottom: 14px;
+    }
+
+    .collection .row.blue .right-part .green {
+        margin-right: 58px;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    .collection .row .right-part .green {
+        font-size: 17.433px;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 0.174px;
+        margin-left: 55px;
+        margin-right: 46px;
+    }
+
+    .collection .row .right-part .bold {
+        font-size: 17.433px;
+        font-weight: 600;
+        line-height: 140%;
+        display: flex;
+        gap: 2.5px;
+    }
+
+    .collection .row .right-part .volume .new {
+        display: block;
+    }
+
+    .collection .row .right-part p:not(.volume) {
+        display: flex;
+    }
+
+    .collection .row .right-part .bold svg {
+        width: 22.414px;
+        height: 22.414px;
+    }
+
+    .collection .row .right-part p:last-of-type {
+        margin-left: 97px;
+    }
+
+    .collection .row .right-part p:nth-child(5n) {
+        margin-left: 100px;
+    }
+
+    .link {
+        font-size: 12.567px;
+        line-height: 28.391px;
+        margin-top: 58.45px;
+        margin-right: 5px;
+        justify-content: flex-end;
+    }
+
+    .link svg {
+        margin-left: 11px;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+
+/* -------------------- BREAKPOINT 1440 ------------------------ */
+
+@media screen and (min-width: 1440px) {
+    .collection {
+        padding: 236.41px 96px 100px 98px;
+    }
+
+    .collection h2 {
+        font-size: 45.04px;
+        line-height: 44.751px;
+        margin-bottom: 91px;
+    }
+
+    .collection .titles {
+        padding-bottom: 6px;
+    }
+
+    .collection .titles p {
+        font-size: 22px;
+        letter-spacing: 0.22px;
+    }
+
+    .collection .titles .right-part {
+        gap: 92.52px;
+    }
+
+    .collection .row {
+        border-bottom: 1.69px solid #EBE9E9;
+        padding-bottom: 25.96px;
+        margin-top: 40px;
+    }
+
+    .collection .row .left-part .image {
+        width: 84.044px;
+        height: 84.044px;
+    }
+
+    .collection .row .left-part .name {
+        margin-left: 23.65px;
+    }
+
+    .collection .row .left-part .name h3 {
+        font-size: 28.015px;
+        margin-bottom: 1.75px;
+    }
+
+    .collection .row .left-part .name p {
+        font-size: 22.762px;
+    }
+
+    .collection .row .right-part p {
+        font-size: 23.654px;
+        letter-spacing: 0.237px;
+    }
+
+    .collection .row .right-part .green {
+        font-size: 24.513px;
+        letter-spacing: 0.245px;
+        margin-left: 79px;
+        margin-right: 64px;
+    }
+
+    .collection .row.blue .right-part .green {
+        margin-right: 80px;
+    }
+
+    .collection .row .right-part .bold {
+        font-size: 24.513px;
+        gap: 3.5px;
+    }
+
+    .collection .row .right-part .bold svg {
+        width: 31.516px;
+        height: 31.516px;
+    }
+
+    .collection .row .right-part p:last-of-type {
+        margin-left: 136px;
+    }
+
+    .collection .row .right-part p:nth-child(5n) {
+        margin-left: 144px;
+    }
+
+    .link {
+        font-size: 17.67px;
+        line-height: 39.92px;
+        letter-spacing: -0.088px;
+        margin-top: 81px;
+        margin-right: 7px;
+    }
+
+    .link svg {
+        margin-left: 16.82px;
+        width: 14px;
+        height: 14px;
+    }
+}

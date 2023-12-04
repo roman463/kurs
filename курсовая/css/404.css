@@ -1,0 +1,83 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 20px;
+    height: 100vh;
+}
+
+.error h1 {
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -3px;
+    text-transform: capitalize;
+}
+
+.error h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.error .dark-btn {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.117px;
+    text-transform: uppercase;
+    border-radius: 8.895px;
+    border: 2px solid #000;
+    padding: 15px 40px;
+    color: #FFF;
+    background: #000;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all .5s ease-in-out;
+}
+
+.error .dark-btn:hover {
+    color: #000;
+    background: transparent;
+    transition: all .5s ease-in-out;
+}
+
+
+/* -------------------- BREAKPOINT 1024 ------------------------ */
+
+@media screen and (min-width: 1024px) {
+    .error h1 {
+        font-size: 170px;
+    }
+
+    .error h2 {
+        font-size: 30px;
+    }
+
+    .error .dark-btn {
+        padding: 18px 45px;
+    }
+}
+
+
+/* -------------------- BREAKPOINT 1440 ------------------------ */
+
+@media screen and (min-width: 1440px) {
+    .error h1 {
+        font-size: 250px;
+    }
+
+    .error h2 {
+        font-size: 35px;
+    }
+
+    .error .dark-btn {
+        font-size: 18px;
+        padding: 20px 60px;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,194 @@
+.quest-banner {
+    padding: 0 30px;
+    margin-bottom: 49px;
+}
+
+.quest-banner h1,
+.quest-banner h2 {
+    color: #18181B;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23.638px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.quest-banner h1 {
+    margin-right: 5px;
+}
+
+.quest-banner h2 {
+    color: #C5C5C5;
+    margin-bottom: 52px;
+}
+
+.quest-banner .quest {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 5px 8px 0;
+    border-bottom: 1px #818181 solid;
+    transition: all .5s ease-in-out; 
+}
+
+.quest-banner .quest .text {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    color: #12141D;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15.653px;
+    transition: all .5s ease-in-out;    
+}
+
+.quest-banner .quest.opened .text {
+    margin: 10px 10px 0 0;
+    transition: all .5s ease-in-out;
+}
+
+.quest-banner .quest .title:hover p {
+    transition: all .5s ease-in-out;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.quest-banner .quest .title:hover svg {
+    transition: all .5s ease-in-out;
+    width: 18px;
+    height: 17px;
+}
+
+.quest-banner .quest .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.quest-banner .quest .title p {
+    color: #323142;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12.301px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 31.119px;
+    transition: all .5s ease-in-out;
+}
+
+.quest-banner .quest:nth-of-type(4) {
+    display: none;
+}
+
+.quest-banner .quest .title svg {
+    transition: all .5s ease-in-out;
+    width: 17px;
+    height: 16px;
+}
+
+
+/* -------------------- BREAKPOINT 1024 ------------------------ */
+
+@media screen and (min-width: 1024px) {
+    .quest-banner {
+        padding: 0 68px;
+        margin-bottom: 80px;
+    }
+
+    .quest-banner h1,
+    .quest-banner h2 {
+        font-size: 34.67px;
+    }
+
+    .quest-banner h1 {
+        margin-right: 7px;
+    }
+
+    .quest-banner h2 {
+        margin-bottom: 46px;
+    }
+
+    .quest-banner .quest {
+        padding: 30px 10px 19px 11px;
+    }
+
+    .quest-banner .quest .text {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .quest-banner .quest.opened .text {
+        margin: 25px 0 0 0;
+    }
+
+    .quest-banner .quest .title p {
+        font-size: 18.041px;
+    }
+
+    .quest-banner .quest:nth-of-type(3) {
+        display: none;
+    }
+
+    .quest-banner .quest:nth-of-type(4) {
+        display: flex;
+    }
+
+    .quest-banner .quest .title svg {
+        height: 24px;
+        width: 25px;
+    }
+
+    .quest-banner .quest .title:hover svg {
+        width: 27px;
+        height: 26px;
+    }
+}
+
+
+/* -------------------- BREAKPOINT 1440 ------------------------ */
+
+@media screen and (min-width: 1440px) {
+    .quest-banner {
+        padding: 0 96px;
+        margin-bottom: 157px;
+    }
+
+    .quest-banner h1,
+    .quest-banner h2 {
+        font-size: 48.75px;
+    }
+
+    .quest-banner h1 {
+        margin-right: 10px;
+    }
+
+    .quest-banner h2 {
+        margin: 10px 0 51.5px;
+    }
+
+    .quest-banner .quest {
+        padding: 47.5px 14px 31px 12px;
+    }
+
+    .quest-banner .quest .text {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .quest-banner .quest .title p {
+        font-size: 25.368px;
+    }
+
+    .quest-banner .quest .title svg {
+        height: 34px;
+        width: 33px;
+    }
+
+    .quest-banner .quest .title:hover svg {
+        width: 35px;
+        height: 36px;
+    }
+}

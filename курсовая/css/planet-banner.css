@@ -1,0 +1,175 @@
+.planet-banner {
+    margin-top: 103px;
+    margin-bottom: 140.5px;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/main/planets-block/planets.svg);
+    background-size: 519px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.planet-banner h1 {
+    color: #18181B;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26.61px;
+    text-transform: capitalize;
+}
+
+.planet-banner h1:first-of-type {
+    padding-top: 185px;
+}
+
+.planet-banner h1:last-of-type {
+    color: #C5C5C5;
+}
+
+.planet-banner p:last-of-type {
+    display: none;
+}
+
+.planet-banner p {
+    padding: 17px 1px 0 0;
+    color: #12141D;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15.653px;
+    opacity: 0.7;
+}
+
+.planet-banner .dark-btn {
+    margin-top: 23px;
+    padding: 12.5px 0 10.5px 0;
+    width: 121px;
+    border: #000 1px solid;
+    border-radius: 7.173px;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 8.828px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11.035px;
+    letter-spacing: 0.05px;
+    word-spacing: 1px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.planet-banner .dark-btn:hover {
+    color: #000;
+    background: transparent;
+    transition: all .5s ease-in-out;
+}
+
+
+/* -------------------- BREAKPOINT 1024 ------------------------ */
+
+@media screen and (min-width: 1024px) {
+    .planet-banner {
+        margin-top: 109.6px;
+        margin-bottom: 166.5px;
+        height: 775px;
+        background-size: 754px;
+    }
+
+    .planet-banner h1 {
+        font-size: 32.003px;
+        line-height: 38.688px;
+    }
+
+    .planet-banner h1:first-of-type {
+        padding: 264.5px 25px 0 0;
+    }
+
+    .planet-banner h1:last-of-type {
+        padding: 0 25px 0 0;
+    }
+
+    .planet-banner p:first-of-type {
+        display: none;
+    }
+
+    .planet-banner p:last-of-type {
+        display: flex;
+    }
+
+    .planet-banner p {
+        padding: 22px 22px 0 0;
+        font-size: 12.801px;
+        line-height: 22.758px;
+        letter-spacing: 0.05px;
+    }
+
+    .planet-banner .dark-btn {
+        margin: 35px 4px 0 0;
+        padding: 12.5px 0 10.5px 0;
+        width: 144.37px;
+        border-radius: 8.529px;
+        font-size: 10.497px;
+        line-height: 13.121px;
+        letter-spacing: 0.05px;
+        word-spacing: 1px;
+    }
+}
+
+
+/* -------------------- BREAKPOINT 1440 ------------------------ */
+
+@media screen and (min-width: 1440px) {
+    .planet-banner {
+        margin-top: 153px;
+        margin-bottom: 239.5px;
+        height: 1090px;
+        background-size: 1061px;
+    }
+
+    .planet-banner h1 {
+        font-size: 45px;
+        line-height: 54.4px;
+    }
+
+    .planet-banner h1:first-of-type {
+        padding: 375px 35px 0 0;
+    }
+
+    .planet-banner h1:last-of-type {
+        padding: 0 35px 0 0;
+    }
+
+    .planet-banner p:first-of-type {
+        display: none;
+    }
+    
+    .planet-banner p:last-of-type {
+        display: flex;
+    }
+
+    .planet-banner p {
+        padding: 30px 28.5px 0 0;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .planet-banner .dark-btn {
+        margin: 49px 6px 0 0;
+        padding: 17.5px 0px 17.5px 0;
+        width: 203px;
+        border-radius: 11.993px;
+        font-size: 14.76px;
+        line-height: 18.45px;
+        letter-spacing: 0.05px;
+        word-spacing: 1px;
+    }
+}

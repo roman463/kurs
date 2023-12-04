@@ -1,0 +1,209 @@
+.last-banner {
+    position: relative;
+    padding: 62px 30px 100px 20px;
+    margin-bottom: 91px;
+}
+
+.last-banner .dark-banner {
+    margin-left: 10px;
+    padding: 21.9px 39.8px 82.4px 39.16px;
+    border-radius: 14.866px;
+    background: #141416;
+}
+
+.dark-banner h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22.299px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.223px;
+}
+
+.dark-banner p {
+    margin: 5.99px 0 0 1px;
+    color: #878788;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10.042px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.1px;
+}
+
+.dark-banner .btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 13.5px;
+    margin-top: 25px;
+}
+
+.dark-banner .btn-group button {
+    font-family: 'Outfit', sans-serif;
+    padding: 9.827px 12.851px;
+    font-size: 10.583px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.106px;
+    border-radius: 6.047px;
+    border: 1.075px solid #FFF;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.dark-banner .btn-group .light-btn {
+    color: #000;
+    background: #FFF;
+}
+
+.dark-banner .btn-group .light-btn:hover {
+    color: #fff;
+    background: #000;
+    transition: all .5s ease-in-out;
+}
+
+.dark-banner .btn-group .dark-btn {
+    width: 91px;
+    color: #FFF;
+    background: transparent;
+}
+
+.dark-banner .btn-group .dark-btn:hover {
+    color: #000;
+    background: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.last-banner img:first-of-type {
+    position: absolute;
+    top: 204px;
+    left: calc(50% - 164.5px)
+}
+
+.last-banner img:last-of-type {
+    display: none;
+}
+
+
+/* -------------------- BREAKPOINT 1024 ------------------------ */
+
+@media screen and (min-width: 1024px) {
+    .last-banner {
+        padding: 62px 70px 99px 58px;
+        margin-bottom: 15px;
+    }
+
+    .last-banner .dark-banner {
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 31px 39.8px 37px 47px;
+        border-radius: 19px;
+    }
+
+    .dark-banner h1 {
+        text-align: start;
+        font-size: 32.003px;
+        letter-spacing: 0.32px;
+    }
+
+    .dark-banner p {
+        margin: 9px 0 0 2px;
+        text-align: start;
+        font-size: 14.412px;
+        letter-spacing: 0.144px;
+    }
+
+    .dark-banner .btn-group {
+        justify-content: start;
+        padding: 10px 0 0 1px;
+        gap: 21px;
+    }
+
+    .dark-banner .btn-group button {
+        padding: 0;
+        font-size: 15.204px;
+        letter-spacing: 0.152px;
+        border-radius: 8.688px;
+    }
+
+    .dark-banner .btn-group .light-btn {
+        width: 130px;
+        padding: 14px 15px;
+    }
+
+    .dark-banner .btn-group .dark-btn {
+        width: 132px;
+    }
+
+    .last-banner img:first-of-type {
+        display: none;
+    }
+
+    .last-banner img:last-of-type {
+        display: block;
+        position: absolute;
+        top: 66px;
+        left: calc(100% - 401px);
+    }
+}
+
+
+/* -------------------- BREAKPOINT 1440 ------------------------ */
+
+@media screen and (min-width: 1440px) {
+    .last-banner {
+        padding: 29px 99px 140px 87px;
+        margin-bottom: 19px;
+    }
+
+    .last-banner .dark-banner {
+        margin-top: 30px;
+        margin-left: 10px;
+        padding: 44px 39.8px 55px 66px;
+        border-radius: 27px;
+    }
+
+    .dark-banner h1 {
+        font-size: 45px;
+        letter-spacing: 0.45px;
+    }
+
+    .dark-banner p {
+        margin: 12px 0 0 1px;
+        font-size: 20.265px;
+        letter-spacing: 0.203px;
+    }
+
+    .dark-banner .btn-group {
+        padding: 24px 0 0 0;
+        gap: 30px;
+    }
+
+    .dark-banner .btn-group button {
+        padding: 0;
+        font-size: 21.357px;
+        letter-spacing: 0.214px;
+        border-radius: 12.204px;
+    }
+
+    .dark-banner .btn-group .light-btn {
+        width: 183px;
+        padding: 19px 15px;
+    }
+
+    .dark-banner .btn-group .dark-btn {
+        width: 183px;
+    }
+
+    .last-banner img:last-of-type {
+        width: 500px;
+        display: block;
+        position: absolute;
+        top: 51px;
+        left: calc(100% - 565px);
+    }
+}

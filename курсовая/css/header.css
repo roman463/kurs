@@ -1,0 +1,308 @@
+header {
+    position: relative;
+    margin: 0 30px 0 29px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.502px #CBCBCB solid;
+}
+
+header .left-header {
+    display: flex;
+    flex-direction: row;
+}
+
+header .left-header svg {
+    width: 46.411px;
+    height: 46.411px;
+}
+
+header .left-header p {
+    margin: 9.65px 0 8.56px 7.05px;
+    color: #000;
+    font-size: 21.365px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+header .menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style: none;
+    width: 200px;
+    margin: 0 -30px 0;
+    padding: 70px 40px 40px;
+    opacity: 0;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: all .5s ease-in-out;
+    z-index: 2;
+}
+
+header .menu li {
+    cursor: pointer;
+    color: #606060;
+    font-family: 'Inter', sans-serif;
+    font-size: 12.679px;
+    font-weight: 500;
+    line-height: 19.019px;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+}
+
+header .menu li:hover {
+    color: #000;
+    font-weight: 600;
+    transition: all .5s ease-in-out;
+}
+
+.burger {
+    margin: 12px 0 12.08px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7.5px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.burger-line {
+    width: 30px;
+    height: 1px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+header .right-header {
+    display: flex;
+    flex-direction: row;
+    gap: 20.75px;
+}
+
+header .right-header input {
+    cursor: pointer;
+    display: none;
+    width: 199.814px;
+    padding-left: 48px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 117%;
+    height: 41px;
+    background: url('../img/header/icon.svg') no-repeat #EDEDED;
+    background-position: top 11.81px left 15.06px;
+    border: 1px solid #EDEDED;
+    border-radius: 11.501px;
+    transition: all .5s ease-in-out;
+}
+
+header .right-header input:hover {    
+    border: 1px solid #000;
+    transition: all .5s ease-in-out;
+}
+
+header .right-header input::placeholder {
+    color: #C2C3CB;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11.174px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 117.5%;
+    letter-spacing: -0.223px;
+    padding: 13.57px 0 13.97px 0px;
+}
+
+header .right-header .dark-btn {
+    cursor: pointer;
+    display: none;
+    padding: 11.501px 17.252px;
+    align-items: flex-start;
+    gap: 7.188px;
+    background: #141416;
+    border: 1px solid #000;
+    border-radius: 11.501px;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 11.501px;
+    font-weight: 600;
+    line-height: 17.252px;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+}
+
+header .right-header .dark-btn:hover {
+    color: #000;
+    background: transparent;
+    transition: all .5s ease-in-out;
+}
+
+header .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 -30px;
+    z-index: -10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    background-color: rgb(0 0 0 / 33%);
+}
+
+
+/* --------------------OPEN MENU------------------------ */
+
+header.menu-open .menu {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all .5s ease-in-out;
+}
+
+header.menu-open .burder {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    margin: 0;
+}
+
+header.menu-open .mask {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s ease-in-out;
+}
+
+header.menu-open .burger .burger-line:first-child {
+    transform: rotate(45deg) translate(9px, 4px);
+    transition: all .5s ease-in-out;
+}
+
+header.menu-open .burger .burger-line:nth-child(2) {
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header.menu-open .burger .burger-line:last-child {
+    transition: all .5s ease-in-out;
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+
+/* -------------------- BREAKPOINT 1024 ------------------------ */
+
+@media screen and (min-width: 1024px) {
+    header .left-header p {
+        display: none;
+    }
+
+    header .mask {
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+
+    header .menu {
+        flex-direction: row;
+        position: relative;
+        top: unset;
+        right: unset;
+        gap: 38.5px;
+        opacity: 1;
+        padding: 0;
+        margin: 11.38px 0 9.62px 40.26px;
+        background-color: unset;
+        transform: none;
+        width: unset;
+        transition: none;
+    }
+
+    header .left-header svg {
+        margin: 2.13px 0 1.18px;
+        width: 37.692px;
+        height: 37.692px;
+    }
+
+    header {
+        margin: 0 67.27px 0 67.15px;
+        padding: 32px 0 0;
+        border-bottom: none;
+    }
+
+    header .left-header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    header .right-header input,
+    header .right-header .dark-btn {
+        display: flex;
+    }
+}
+
+
+/* -------------------- BREAKPOINT 1440 ------------------------ */
+
+@media screen and (min-width: 1440px) {
+    header {
+        margin: 0 95px 0 94px;
+        padding: 45px 0;
+    }
+
+    header .left-header svg {
+        width: 53px;
+        height: 53px;
+    }
+
+    header .menu {
+        margin: 16px 0 14.34px 57.06px;
+        gap: 54px;
+    }
+
+    header .menu li {
+        font-size: 17.829px;
+        font-weight: 500;
+        line-height: 26.743px;
+    }
+
+    header .right-header {
+        gap: 30.03px;
+    }
+
+    header .right-header input {
+        padding-left: 70px;
+        width: 277.454px;
+        height: 58px;
+        font-size: 15px;
+        line-height: 117.5%;
+        background: url('../img/header/icon2.svg') no-repeat #EDEDED;
+        background-position: top 18px left 21px;
+        border-radius: 16.172px;
+    }
+
+    header .right-header input::placeholder {
+        font-size: 15.711px;
+        letter-spacing: -0.314px;
+        padding: 19.08px 0 19.92px 0;
+    }
+
+    header .right-header .dark-btn {
+        padding: 16.172px 24.258px;
+        gap: 10.108px;
+        border-radius: 16.172px;
+        font-size: 16.172px;
+        line-height: 24.258px;
+    }
+}

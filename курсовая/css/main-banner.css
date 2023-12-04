@@ -1,0 +1,514 @@
+.banner {
+    margin: 0 30px;
+    padding: 74.25px 0 46.6px;
+    display: flex;
+    flex-direction: column;
+    gap: 70.53px;
+}
+
+.banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-info .grey-text {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    gap: 12.33px;
+    margin-bottom: 5.98px;
+    margin-left: 77px;
+}
+
+.banner-info .grey-text p {
+    color: #8D8C8C;
+    font-family: 'Poppins', sans-serif;
+    font-size: 9.248px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 1.233px;
+}
+
+.banner-info .grey-text .line {
+    width: 33.292px;
+    height: 0.617px;
+    margin-bottom: 2px;
+    background: #8D8C8C;
+}
+
+.banner-info h1 {
+    color: #141416;
+    font-family: 'Poppins', sans-serif;
+    font-size: 47.399px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1.896px;
+    max-width: 300px;
+}
+
+.banner-info hr {
+    display: none;
+    width: 138.681px;
+    height: 0.71px;
+    margin-left: 1.42px;
+    background: #cecdcd;
+    margin-block: 0;
+    border: none;
+}
+
+.banner-info .text {
+    color: #676767;
+    font-family: 'Inter', sans-serif;
+    font-size: 11.376px;
+    font-weight: 400;
+    line-height: 17.696px;
+    margin-top: 9.87px;
+    max-width: 316px;
+}
+
+.banner-info .text span {
+    font-weight: 600;
+    color: #141416;
+}
+
+.banner-info .btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 42.15px;
+}
+
+.banner-info .btn-group button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11.661px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.117px;
+    text-transform: uppercase;
+    border-radius: 8.895px;
+    border: 1.075px solid #000;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.banner-info .btn-group .dark-btn {
+    padding: 14px 20px;
+    color: #FFF;
+    background: #000;
+}
+
+.banner-info .btn-group .dark-btn:hover {
+    color: #000;
+    background: transparent;
+    transition: all .5s ease-in-out;
+}
+
+.banner-info .btn-group .light-btn {
+    padding: 14px;
+    color: #000;
+    background: transparent;
+}
+
+.banner-info .btn-group .light-btn:hover {
+    color: #fff;
+    background: #000;
+    transition: all .5s ease-in-out;
+}
+
+.banner-info .rates {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    margin-top: 19px;
+}
+
+.banner-info .rates .stars {
+    margin: 0 7.38px 4.56px 16.01px;
+}
+
+.banner-info .rates p {
+    color: #6e7886;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12.811px;
+    font-weight: 500;
+    line-height: 19.216px;
+}
+
+.banner-info .statistic {
+    display: none;
+    flex-direction: row;
+    gap: 46.35px;
+    margin-top: 58.32px;
+}
+
+.banner-info .statistic .elem {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 0.5px;
+}
+
+.banner-info .statistic .elem div {
+    color: #141416;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 26.151px;
+    font-weight: 600;
+    line-height: 32.689px;
+}
+
+.banner-info .statistic .elem p {
+    color: #848586;
+    font-family: 'Inter', sans-serif;
+    font-size: 8.717px;
+    font-weight: 500;
+    line-height: 13.075px;
+}
+
+.banner-pictures {
+    position: relative;
+    width: 100%;
+    margin-right: -30px;
+}
+
+.banner-pictures .pic-bg {
+    position: relative;
+    width: 151%;
+    left: -44px;
+    top: -32px;
+    z-index: -1;
+}
+
+.banner-pictures .pic-bg:first-child {
+    display: none;
+}
+
+.btn-arrows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCFCFD;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 9.196px;
+    box-shadow: 0px 22.99081px 18.39265px -13.79449px rgba(15, 15, 15, 0.12);
+    cursor: pointer;
+}
+
+.btn-arrows .inner-line {
+    width: 1.15px;
+    height: 13.794px;
+    background-color: #E6E8EC;
+}
+
+.btn-arrows .arrow {
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    width: 13.794px;
+    height: 13.794px;
+    padding: 11.495px 11.495px 11.495px 18.393px;
+}
+
+.btn-arrows .arrow.previous {
+    transform: rotate(180deg);
+}
+
+.btn-arrows .arrow path {
+    transition: all .5s ease-in-out;
+}
+
+.btn-arrows .arrow:hover path {
+    transition: all .5s ease-in-out;
+    fill: #888888;
+}
+
+.banner-pictures .btn-arrows {
+    position: absolute;
+    bottom: 67px;
+    left: 19%;
+}
+
+
+/* -------------------- BREAKPOINT 425 ------------------------ */
+
+@media screen and (min-width: 425px) {
+
+    .banner-info .grey-text {
+        align-self: center;
+        margin-left: 0px;
+    }
+
+    .banner-pictures .pic-bg {
+        width: 120%;
+        left: -10px;
+    }
+
+    .banner-pictures .btn-arrows {
+        bottom: 20%;
+    }
+
+    .btn-arrows .arrow {
+        padding: 15px 15px 15px 18.393px;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+
+/* -------------------- BREAKPOINT 768 ------------------------ */
+
+@media screen and (min-width: 768px) {
+
+    .banner-info h1,
+    .banner-info .text {
+        max-width: unset;
+    }
+
+    .btn-arrows .arrow {
+        width: 18.415px;
+        height: 18.415px;
+    }
+}
+
+
+/* -------------------- BREAKPOINT 1024 ------------------------ */
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        margin: 0 68.99px;
+        padding: 79.19px 0 117.7px;
+        flex-direction: row;
+        align-items: start;
+        gap: 34.13px;
+    }
+
+    .banner-info {
+        justify-content: flex-start;
+        align-items: start;
+        text-align: start;
+    }
+
+    .banner-info .grey-text {
+        display: none;
+    }
+
+    .banner-info h1 {
+        width: 403.241px;
+        font-size: 53.339px;
+        letter-spacing: -2.134px;
+        margin-left: 1.42px;
+    }
+
+    .banner-info .text {
+        width: 354.88px;
+        font-size: 12.801px;
+        line-height: 19.913px;
+        margin-top: 11.39px;
+        text-align: justify;
+        margin-left: 2.13px;
+    }
+
+    .banner-info .btn-group {
+        gap: 15.35px;
+        margin-top: 30.82px;
+    }
+
+    .banner-info .btn-group button {
+        font-size: 11.571px;
+        letter-spacing: 0.116px;
+        border-radius: 8.827px;
+        border: 1.067px solid #000;
+    }
+
+    .banner-info .btn-group .dark-btn {
+        padding: 12.8px 21.68px 9.87px 19.62px;
+    }
+
+    .banner-info .btn-group .light-btn {
+        padding: 12.8px 14.21px 11.87px 13.94px;
+    }
+
+    .banner-info .rates {
+        display: none;
+    }
+
+    .banner-info .statistic {
+        display: flex;
+    }
+
+    .banner-info hr {
+        display: block;
+        margin-left: 1.42px;
+        margin-bottom: 7.11px;
+    }
+
+    .banner-pictures {
+        margin-top: 4.98px;
+    }
+
+    .banner-pictures .pic-bg {
+        position: absolute;
+        left: -43px;
+        right: unset;
+        height: unset;
+        top: -43px;
+        width: 130%;
+    }
+
+    .banner-pictures .pic-bg:first-child {
+        display: block;
+    }
+
+    .banner-pictures .pic-bg:last-of-type {
+        display: none;
+    }
+
+    .btn-arrows {
+        background-color: #FCFCFD;
+        border-radius: 12.266px;
+        box-shadow: 0px 30.66397px 24.53118px -18.39838px rgba(15, 15, 15, 0.12);
+    }
+
+    .btn-arrows .inner-line {
+        width: 1.533px;
+        height: 18.399px;
+    }
+
+    .banner-pictures .btn-arrows {
+        top: 331.5px;
+        left: 79px;
+    }
+
+    .btn-arrows .arrow {
+        padding: 15.332px 15.332px 15.332px 24.531px;
+    }
+}
+
+
+/* -------------------- BREAKPOINT 1025 ------------------------ */
+
+@media screen and (min-width: 1025px) {
+    .banner-pictures .pic-bg {
+        left: calc(50% - 300px);
+        top: -43px;
+        width: 680px;
+    }
+
+    .banner-pictures .btn-arrows {
+        top: 331.5px;
+        left: calc(50% - 160px);
+    }
+}
+
+
+/* -------------------- BREAKPOINT 1440 ------------------------ */
+
+@media screen and (min-width: 1440px) {
+    .banner {
+        margin: 0 97px;
+        padding: 64px 0 165.01px;
+        flex-direction: row;
+        gap: 48px;
+    }
+
+    .banner-info h1 {
+        width: 567px;
+        font-size: 75px;
+        letter-spacing: -3px;
+        margin-left: 1px;
+    }
+
+    .banner-info .text {
+        width: 499px;
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 16px;
+        margin-left: 3px;
+    }
+
+    .banner-info .btn-group {
+        gap: 24px;
+        margin-top: 44px;
+    }
+
+    .banner-info .btn-group button {
+        font-size: 16.271px;
+        letter-spacing: 0.163px;
+        border-radius: 12.412px;
+        border: 1.5px solid #000;
+    }
+
+    .banner-info .btn-group .dark-btn {
+        padding: 17px 29px 17px 28px;
+    }
+
+    .banner-info .btn-group .light-btn {
+        padding: 17px 20px;
+    }
+
+    .banner-info .statistic {
+        margin-top: 82px;
+        gap: 65.28px;
+    }
+
+    .banner-info .statistic .elem {
+        gap: 6.92px;
+    }
+
+    .banner-info .statistic .elem div {
+        font-size: 36.771px;
+        line-height: 45.964px;
+    }
+
+    .banner-info .statistic .elem p {
+        font-size: 12.257px;
+        line-height: 18.386px;
+    }
+
+    .banner-info hr {
+        display: block;
+        width: 195px;
+        height: 1px;
+        margin-left: 3px;
+        margin-bottom: 10px;
+    }
+
+    .banner-pictures {
+        margin-top: 7px;
+    }
+
+    .banner-pictures .pic-bg {
+        left: -60px;
+        top: -60px;
+        width: 132%;
+    }
+
+    .btn-arrows {
+        border-radius: 17.247px;
+        box-shadow: 0px 43.11688px 34.49351px -25.87013px rgba(15, 15, 15, 0.12);
+    }
+
+    .banner-pictures .btn-arrows {
+        left: 112px;
+        top: 466px;
+    }
+
+    .btn-arrows .inner-line {
+        width: 2.156px;
+        height: 25.87px;
+    }
+
+    .btn-arrows .arrow {
+        width: 25.87px;
+        height: 25.87px;
+        padding: 21.558px 21.558px 21.558px 34.49px;
+    }
+}

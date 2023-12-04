@@ -1,0 +1,97 @@
+.cards-slider {
+    position: relative;
+    background: #F1F1F1;
+    padding: 58px 0 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-slider .title {
+    color: #C5C5C5;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26.916px;
+    margin-bottom: 62px;
+}
+
+.cards-slider .swiper-cards {
+    width: 100%;
+}
+
+.cards-slider .swiper-cards .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards-slider .btn-arrows {
+    margin: 60px auto 0;
+}
+
+.cards-slider .btn-arrows .arrow {
+    padding: 14px 15px 14px 22px;
+}
+
+.cards-slider .absolute-block {
+    display: none;
+    position: absolute;
+    bottom: calc(0% - 125px);
+    right: 27px;
+}
+
+
+/* -------------------- BREAKPOINT 1024 ------------------------ */
+
+@media screen and (min-width: 1024px) {
+    .cards-slider {
+        padding: 51px 0 64.02px;
+    }
+
+    .cards-slider .title {
+        font-size: 32.003px;
+        line-height: 19.142px;
+        margin-bottom: 70.32px;
+    }
+
+    .cards-slider .btn-arrows {
+        margin-top: 81.58px;
+    }
+
+    .cards-slider .btn-arrows .arrow {
+        padding: 15px 16px 15px 24px;
+    }
+
+    .cards-slider .absolute-block {
+        display: block;
+    }
+}
+
+
+/* -------------------- BREAKPOINT 1440 ------------------------ */
+
+@media screen and (min-width: 1440px) {
+    .cards-slider {
+        padding: 70px 0 90px;
+    }
+
+    .cards-slider .title {
+        font-size: 45px;
+        line-height: 26.916px;
+        margin-bottom: 99px;
+    }
+
+    .cards-slider .btn-arrows {
+        margin-top: 114.72px;
+    }
+
+    .cards-slider .btn-arrows .arrow {
+        padding: 22px 21px 22px 35px;
+    }
+
+    .cards-slider .absolute-block {
+        bottom: calc(0% - 177px);
+        width: 466px;
+        right: 38.5px;
+    }
+}

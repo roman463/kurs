@@ -1,0 +1,474 @@
+.cards-grid {
+    margin: 0 42px;
+    padding-bottom: 164px;
+}
+
+.cards-grid h2 {
+    text-align: center;
+    max-width: 193px;
+    font-size: 30px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.cards-grid h2 span {
+    margin-left: -6px;
+}
+
+.cards-grid .btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14.3px;
+    margin-bottom: 40px;
+    margin-top: 30.6px;
+}
+
+.cards-grid .btn-group .light-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 5.67px;
+    border-radius: 8px;
+    border: 1.417px solid #141416;
+    background: transparent;
+    color: #1A202C;
+    font-family: 'Manrope', sans-serif;
+    font-size: 9.918px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.142px;
+    height: 35px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.cards-grid .btn-group .light-btn:hover {
+    color: #ffffff;
+    background: black;
+    transition: all .5s ease-in-out;
+}
+
+.cards-grid .btn-group .light-btn:hover path {
+    fill: #ffffff;
+    transition: all .5s ease-in-out;
+}
+
+.cards-grid .btn-group .light-btn svg path {
+    transition: all .5s ease-in-out;
+}
+
+.cards-grid .btn-group .light-btn span {
+    margin-top: 1px;
+}
+
+.cards-grid .btn-group .light-btn.btn-all {
+    display: none;
+}
+
+.cards-grid .btn-group .light-btn.btn-category {
+    width: 87.847px;
+}
+
+.cards-grid .btn-group .light-btn.btn-collection {
+    width: 93.515px;
+}
+
+.cards-grid .btn-group .light-btn.btn-price {
+    width: 80.054px;
+}
+
+.cards-grid .grid {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 35.18px;
+}
+
+.cards-grid .card {
+    border-radius: 21.7px;
+    padding: 15px 7px 20px 13px;
+    width: 262px !important;
+    height: 371px !important;
+}
+
+.cards-grid .card:nth-last-of-type(1),
+.cards-grid .card:nth-last-of-type(2),
+.cards-grid .card:nth-last-of-type(3),
+.cards-grid .card:nth-last-of-type(4) {
+    display: none;
+}
+
+.cards-grid .card .picture {
+    width: 255px;
+    height: 254px;
+    margin-bottom: 19px;
+}
+
+.cards-grid .card .picture img {
+    border-radius: 23px;
+}
+
+.cards-grid .card .picture .date {
+    font-size: 14.232px;
+    letter-spacing: 0.119px;
+    border-radius: 9.488px;
+    border: 1.186px solid rgba(28, 29, 32, 0.08);
+    box-shadow: 0px 4.744px 14.232px 0px rgba(28, 29, 32, 0.08);
+    backdrop-filter: blur(2.372028350830078px);
+    padding: 7.7px 13.6px;
+    top: 13.8px;
+    right: 8.5px;
+}
+
+.cards-grid .card .name {
+    font-size: 21.348px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+.cards-grid .card .info {
+    gap: 4.74px;
+    margin-left: 5px;
+}
+
+.cards-grid .card .info .info-text {
+    font-size: 14.232px;
+    letter-spacing: 0.119px;
+}
+
+.cards-grid .card .info .info-detailes {
+    gap: 4px;
+}
+
+.cards-grid .card .info .info-detailes svg {
+    width: 21.348px;
+    height: 21.348px;
+}
+
+.cards-grid .card .info .info-detailes .rate {
+    font-size: 16.604px;
+}
+
+.cards-grid .card .dark-btn {
+    font-size: 14.232px;
+    font-weight: 600;
+    letter-spacing: 0.119px;
+    border-radius: 11.86px;
+    height: 52.185px;
+    padding: 9.488px 0;
+    margin-right: 11px;
+}
+
+.cards-grid .link {
+    margin-top: 49px;
+}
+
+
+/* -------------------- BREAKPOINT 375 ------------------------ */
+
+@media screen and (min-width: 375px) {
+    .cards-grid .btn-group {
+        flex-direction: row;
+        margin-bottom: 75.34px;
+        margin-top: 30.6px;
+    }
+}
+
+
+/* -------------------- BREAKPOINT 768 ------------------------ */
+
+@media screen and (min-width: 768px) {
+    .cards-grid .grid {
+        grid-template-columns: repeat(2, auto);
+        gap: 55px;
+    }
+
+    .cards-grid .card:nth-last-of-type(1),
+    .cards-grid .card:nth-last-of-type(2),
+    .cards-grid .card:nth-last-of-type(3),
+    .cards-grid .card:nth-last-of-type(4) {
+        display: grid;
+    }
+}
+
+
+/* -------------------- BREAKPOINT 1024 ------------------------ */
+
+@media screen and (min-width: 1024px) {
+    .cards-grid {
+        margin: 0 68.2px;
+        padding-bottom: 72.7px;
+        border-bottom: 0.506px solid #CBCBCB;
+    }
+
+    .cards-grid h2 {
+        max-width: unset;
+        font-size: 32.003px;
+        line-height: 19.142px;
+    }
+
+    .cards-grid h2 span {
+        margin: 0;
+    }
+
+    .cards-grid .btn-group {
+        gap: 15.64px;
+        margin-bottom: 71.69px;
+        margin-top: 46.14px;
+    }
+
+    .cards-grid .btn-group .light-btn {
+        border-radius: 9.432px;
+        border: 1.572px solid #141416;
+        font-size: 11.004px;
+        letter-spacing: 0.157px;
+        height: 41px;
+        gap: 6.29px;
+    }
+
+    .cards-grid .btn-group .light-btn span {
+        margin-top: 1px;
+    }
+
+    .cards-grid .btn-group .light-btn svg {
+        width: 17.913px;
+        height: 17.913px;
+    }
+
+    .cards-grid .btn-group .light-btn.btn-all {
+        width: 51px;
+        display: flex;
+    }
+
+    .cards-grid .btn-group .light-btn.btn-category {
+        width: 97.5px;
+    }
+
+    .cards-grid .btn-group .light-btn.btn-collection {
+        width: 103.8px;
+    }
+
+    .cards-grid .btn-group .light-btn.btn-price {
+        width: 88.8px;
+    }
+
+    .cards-grid .grid {
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 49px;
+        column-gap: 28px;
+    }
+
+    .cards-grid .card {
+        border-radius: 16.751px;
+        padding: 9.5px 7.5px 14px 10.5px;
+        width: 183px !important;
+        height: 262px !important;
+    }
+
+    .cards-grid .card .picture {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 14.43px;
+    }
+
+    .cards-grid .card .picture img {
+        border-radius: 16.75px;
+    }
+
+    .cards-grid .card .picture .date {
+        font-size: 10.07px;
+        letter-spacing: 0.084px;
+        border-radius: 6.714px;
+        border: 0.839px solid rgba(28, 29, 32, 0.08);
+        box-shadow: 0px 3.357px 10.07px 0px rgba(28, 29, 32, 0.08);
+        backdrop-filter: blur(1.6784085035324097px);
+        padding: 4.7px 9.6px;
+        top: 10.8px;
+        right: 6.5px;
+    }
+
+    .cards-grid .card .name {
+        font-size: 15.106px;
+        margin-bottom: 10px;
+        margin-left: 3px;
+    }
+
+    .cards-grid .card .info {
+        gap: 3.36px;
+        margin-left: 2px;
+    }
+
+    .cards-grid .card .info .info-text {
+        font-size: 10.07px;
+        letter-spacing: 0.084px;
+    }
+
+    .cards-grid .card .info .info-detailes {
+        gap: 1.68px;
+    }
+
+    .cards-grid .card .info .info-detailes svg {
+        width: 15.107px;
+        height: 15.107px;
+    }
+
+    .cards-grid .card .info .info-detailes .rate {
+        font-size: 11.749px;
+    }
+
+    .cards-grid .card .dark-btn {
+        font-size: 10.07px;
+        letter-spacing: 0.084px;
+        border-radius: 8.392px;
+        height: 36.185px;
+        padding: 10.488px 0;
+        margin-right: 6px;
+    }
+
+    .cards-grid .link {
+        margin-top: 75.42px;
+    }
+}
+
+
+/* -------------------- BREAKPOINT 1440 ------------------------ */
+
+@media screen and (min-width: 1440px) {
+    .cards-grid {
+        margin: 0 96px;
+        padding-bottom: 103px;
+        border-bottom: 0.711px solid #CBCBCB;
+    }
+
+    .cards-grid h2 {
+        font-size: 45px;
+        line-height: 26.916px;
+    }
+
+    .cards-grid .btn-group {
+        gap: 22px;
+        margin-bottom: 100px;
+        margin-top: 66px;
+    }
+
+    .cards-grid .btn-group .light-btn {
+        border-radius: 13.262px;
+        border: 2.21px solid #141416;
+        font-size: 15.472px;
+        letter-spacing: 0.221px;
+        height: 56px;
+        gap: 8.84px;
+    }
+
+    .cards-grid .btn-group .light-btn span {
+        margin-top: 1px;
+    }
+
+    .cards-grid .btn-group .light-btn svg {
+        width: 25.187px;
+        height: 25.187px;
+    }
+
+    .cards-grid .btn-group .light-btn.btn-all {
+        width: 72px;
+        display: flex;
+    }
+
+    .cards-grid .btn-group .light-btn.btn-category {
+        width: 137px;
+    }
+
+    .cards-grid .btn-group .light-btn.btn-collection {
+        width: 145.9px;
+    }
+
+    .cards-grid .btn-group .light-btn.btn-price {
+        width: 124.9px;
+    }
+
+    .cards-grid .grid {
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 67.6px;
+        column-gap: 40px;
+    }
+
+    .cards-grid .card {
+        border-radius: 23.554px;
+        padding: 15.5px 5.5px 17px 12.5px;
+        width: 264px !important;
+        height: 371px !important;
+    }
+
+    .cards-grid .card .picture {
+        width: 256px;
+        height: 254px;
+        margin-bottom: 15.9px;
+    }
+
+    .cards-grid .card .picture img {
+        border-radius: 23.55px;
+    }
+
+    .cards-grid .card .picture .date {
+        font-size: 14.16px;
+        letter-spacing: 0.118px;
+        border-radius: 9.44px;
+        border: 1.18px solid rgba(28, 29, 32, 0.08);
+        box-shadow: 0px 4.72px 14.16px 0px rgba(28, 29, 32, 0.08);
+        backdrop-filter: blur(2.36002516746521px);
+        padding: 7.7px 13.6px;
+        top: 14.3px;
+        right: 10.5px;
+    }
+
+    .cards-grid .card .name {
+        font-size: 21.24px;
+        margin-bottom: 13.8px;
+        margin-left: 6px;
+    }
+
+    .cards-grid .card .info {
+        gap: 4.7px;
+        margin-left: 6px;
+    }
+
+    .cards-grid .card .info .info-text {
+        font-size: 14.16px;
+        letter-spacing: 0.118px;
+    }
+
+    .cards-grid .card .info .info-detailes {
+        gap: 2.36px;
+    }
+
+    .cards-grid .card .info .info-detailes svg {
+        width: 21.24px;
+        height: 21.24px;
+    }
+
+    .cards-grid .card .info .info-detailes .rate {
+        font-size: 16.52px;
+    }
+
+    .cards-grid .card .dark-btn {
+        font-size: 14.16px;
+        letter-spacing: 0.118px;
+        border-radius: 11.8px;
+        height: 50px;
+        padding: 10.488px 0;
+        margin-right: 14px;
+    }
+
+    .cards-grid .link {
+        margin-top: 105px;
+    }
+}
